@@ -11,7 +11,7 @@ export class UpdateTodoDto {
     get values() {
         const returnObj: {[key: string]: any} = {};
         if( this.text ) returnObj.text = this.text;
-        if( this.completedAt ) returnObj.completedAt = this.text;
+        if( this.completedAt ) returnObj.completedAt = this.completedAt;
         return returnObj;
     }
 
